@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./jquery.js"></script>
+    <style>
+        /* Basic styling */
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        #taskList {
+            margin-top: 20px;
+        }
+
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>To-Do List</h1>
+    <input type="text" id="newTask" placeholder="Add a new task">
+    <button id="addTask">Add Task</button>
+    <button id="loadTasks">Load Sample Tasks</button>
+
+    <div id="taskList"></div>
+
+</body>
+
+</html>
